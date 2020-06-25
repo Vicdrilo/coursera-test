@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Types & Convinations</title> 
+    <style>
+        /* all h2 elements */
+        h2 {
+            color: red;
+            text-align: center;
+        }
+
+        /* all with class="highlight" */
+        .highlight {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            background-color: green;
+            opacity: .6;
+        }
+
+        /* elements with id="mainPoint" */
+        #mainPoint {
+            font-size: 24px;
+            font-weight: bold;
+            background-color: red;
+            opacity: .7;
+        }
+
+        /* all p and h1 elements */
+        p, h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        /* DIRECT CHILD - elements class="important" that are direct child of p tag */
+        p > .important {
+            color: lavender;
+            background-color: hotpink;
+        }
+
+        /* DIRECT CHILD - element class="important" inside id="mainPoint" */
+        #mainPoint > .important {
+            color: black;
+            background-color: yellow;
+        }
+
+        /* NO DIRECT CHILD - element class="important" inside p tag */
+        article p{
+            color: white;
+            background-color: purple;
+        } 
+    </style>
+</head>
+<body>
+    <h1>Anatomy of CSS Rule</h1>
+
+    <h2>Subheading 1</h2>
+    <p id="mainPoint">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+    </p>
+    <p class="highlight">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis 
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+    </p>
+    <article>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+                possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+                tenetur a blanditiis quos dolorem distinctio quam et!
+            </p>
+        </div>
+    </article>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+    </p>
+
+    <h2>Subheading 2</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+    </p>
+    <p class="highlight">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+    </p>
+
+    <h2>Subheading 3</h2>
+    <p id="mainPoint">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, <span class="important">dolorum quia omnis cupiditate ipsum</span> voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+    </p>
+    <p class="highlight">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum <spna class="important">quia omnis cupiditate</spna> ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+    </p>
+
+    <h2>Subheading 4</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+    </p>
+    <p class="highlight">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi rem nulla, 
+        possimus provident, dolorum quia omnis cupiditate ipsum voluptates porro expedita 
+        tenetur a blanditiis quos dolorem distinctio quam et!
+    </p>
+</body>
+</html>
